@@ -1,3 +1,4 @@
+
 # RMS — Lattice Dynamics & Regime Mapping
 
 ## Overview
@@ -82,7 +83,7 @@ v16_run_0310_thr_0p47_self_0p3_noise_0p0012_dens_0p24_seed_42_...
 This run sits within the V6 basin and shows sustained dynamic cluster organisation.
 
 The included GIF illustrates cluster interaction, persistence, and reconfiguration over time.
-
+![V6 Dynamic Cluster Field](runs/v16_run_0310_thr_0p47_self_0p3_noise_0p0012_dens_0p24_seed_42_20260429_162012/run.gif)
 ---
 
 ## Current Focus
