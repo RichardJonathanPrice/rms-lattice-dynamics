@@ -1,0 +1,31 @@
+presets:
+
+  v5:
+    N: 100
+    steps: 1000
+    seed_density: 0.26
+    self_weight: 0.35
+    nbr_weight: 0.65
+    threshold: 0.42
+    noise: 0.001
+    seed: 42
+
+  v6:
+    N: 100
+    steps: 1000
+    seed_density: 0.24
+    self_weight: 0.28
+    nbr_weight: 0.72
+    threshold: 0.46
+    noise: 0.0012
+    seed: 42
+
+  v9:
+    N: 100
+    steps: 1000
+    seed_density: 0.24
+    self_weight: 0.28
+    nbr_weight: 0.72
+    threshold: 0.505
+    noise: 0.001
+    seed: 42

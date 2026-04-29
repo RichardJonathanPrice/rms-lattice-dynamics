@@ -1,0 +1,14 @@
+sweep_name: "RMS_BINARY_CLUSTER_MICRO_SWEEP_v16"
+
+base:
+  N: 100
+  steps: 1000
+  capture_every: 5
+  gif_fps: 25
+
+sweep:
+  threshold: [0.44, 0.45, 0.46, 0.47, 0.48]
+  self_weight: [0.26, 0.28, 0.30]
+  noise: [0.0010, 0.0012, 0.0014]
+  seed_density: [0.22, 0.24, 0.26]
+  seed: [42, 43, 44]
