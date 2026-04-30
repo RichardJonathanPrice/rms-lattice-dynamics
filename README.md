@@ -14,6 +14,46 @@ The system operates on a 2D toroidal grid where each cell updates based on:
 
 This produces a set of emergent regimes.
 
+## Update Rule
+
+Each cell holds a binary state:
+
+state ∈ {0, 1}
+
+At each step, the system calculates the mean activity of the eight neighbouring cells using a Moore neighbourhood on a toroidal grid.
+
+neighbour_mean = sum(active neighbours) / 8
+
+The cell then calculates a local pressure value:
+
+pressure = (self_weight × current_state) + (nbr_weight × neighbour_mean)
+
+The next state is determined by thresholding:
+
+next_state = 1 if pressure >= threshold  
+next_state = 0 otherwise
+
+After this deterministic update, stochastic noise is applied:
+
+with probability noise:  
+    next_state = 1 - next_state
+
+This creates a simple local Markov-style lattice system where global behaviour emerges from repeated local updates.
+
+Reference Parameter Sets
+
+The following parameter sets are used as reference points for the regimes described in this project.
+
+Regime	                    seed_density	self_weight	  nbr_weight	threshold	  noise	  seed
+V5 — Dominant Coalescence  	0.26	        0.35	        0.65	      0.42	      0.0010	42
+V6 — Dynamic Cluster Field	0.24	        0.28	        0.72	      0.46	      0.0012	42
+V9 — Sparse Metastability	  0.24	        0.28	        0.72	      0.505      	0.0010	42
+
+N = 100
+steps = 1000
+boundary = toroidal
+neighbourhood = Moore, 8 neighbours
+
 ---
 
 ## Key Finding
