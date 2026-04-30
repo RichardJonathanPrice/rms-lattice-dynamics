@@ -44,10 +44,10 @@ Reference Parameter Sets
 
 The following parameter sets are used as reference points for the regimes described in this project.
 
-Regime	                    seed_density	self_weight	  nbr_weight	threshold	  noise	  seed
-V5 — Dominant Coalescence  	0.26	        0.35	        0.65	      0.42	      0.0010	42
-V6 — Dynamic Cluster Field	0.24	        0.28	        0.72	      0.46	      0.0012	42
-V9 — Sparse Metastability	  0.24	        0.28	        0.72	      0.505      	0.0010	42
+Regime	                        seed_density	self_weight	    nbr_weight	    threshold	  noise	      seed
+V5 — Dominant Coalescence      	0.26	        0.35	        0.65	        0.42	      0.0010	   42
+V6 — Dynamic Cluster Field	    0.24	        0.28	        0.72	        0.46	      0.0012	   42
+V9 — Sparse Metastability	    0.24	        0.28	        0.72	        0.505      	  0.0010	   42
 
 N = 100
 steps = 1000
